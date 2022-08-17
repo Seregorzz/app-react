@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import Trabajo from './trabajo.js';
+import Navbar from './components/navbar';
+import guitarra from './components/img/guitarra.png'
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Erick Varela Martinez JS
-        </p>
-        <a
-          className="App-link"
-          href="https://bloghorror.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Aprende React
-        </a>
-      </header>
+    <div >
+
+      <header><img src={guitarra} alt=''></img>
+      <Navbar/></header>
+      
+      <Trabajo />
     </div>
   );
 }
