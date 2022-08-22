@@ -1,17 +1,40 @@
-import './App.css'
-import Trabajo from './trabajo.js';
+import './App.css';
 import Navbar from './components/navbar';
-import guitarra from './components/img/guitarra.png'
+import Titulo from './components/ItemListContainer';
+
+
+
+
+
 
 
 const App = () => {
   return (
     <div >
 
-      <header><img src={guitarra} alt=''></img>
-      <Navbar/></header>
+      <header>
+        
+        
+      <Navbar/>
+     
+      </header>
+
+      <main>
+
+      <Titulo/>
+      </main>
+
       
-      <Trabajo />
+
+      
+
+      
+
+      
+      
+      
+
+      
     </div>
   );
 }
