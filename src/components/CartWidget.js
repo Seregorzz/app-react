@@ -8,7 +8,7 @@ const Carrito = () => {
 
         <section>
 
-        <img className="car" src='assets/carro.png' alt=''></img>
+        <img  src='assets/carro.png' alt=''></img>
 
 
         </section>

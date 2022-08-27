@@ -1,11 +1,11 @@
 
 
-const Titulo = () => {
+const Titulo = (props) => {
 
 
 return(
 
-    <h1 className="provisional">Bienvenidos a la tienda mas grande de guitarras</h1>
+    <h1 className="provisional">Bienvenidos {props.guitarra}</h1>
 )
 
 
