@@ -2,6 +2,11 @@
 import Button from 'react-bootstrap/Button';
 import { useState } from "react"
 
+
+
+
+
+
 const Contador = ({onAdd, initial, stock}) => {
    //let counter = 1
    const [counter,setCounter] = useState(initial)
@@ -9,8 +14,8 @@ const Contador = ({onAdd, initial, stock}) => {
    
    const sumar = () => {
 
-
-        setCounter(counter + 1)
+      setCounter(counter + 1);
+      
     
     console.log(counter)
     
@@ -27,7 +32,7 @@ const restar = () => {
 
     return(
    <div className="cuenta">
-    <h2>Contador</h2>
+    
 
     <button onClick={restar} className="btn btn-outline-primary" >-</button>
 

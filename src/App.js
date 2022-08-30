@@ -1,8 +1,9 @@
 import './App.css';
-import Navbar from './components/navbar';
-import Titulo from './components/ItemListContainer';
+import Navbar from './components/Header/navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Contador from './components/ItemCounts';
+
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+
 
 
 
@@ -10,9 +11,7 @@ import Contador from './components/ItemCounts';
 export default function App  ()  {
 
 
-  const onAdd = (counter) => {
-    alert(`Agregaste ${counter} productos`);
-  };
+  
 
 
   return (
@@ -27,13 +26,15 @@ export default function App  ()  {
 
       <main>
 
-      <Titulo guitarra="a la tienda mas grande de guitarras"/>
+      <ItemListContainer/>
+      
      
 
      
-     <>
-      <Contador onAdd={onAdd} initial={1} stock={7} />
-    </>
+     
+      
+      
+    
   
       
     
@@ -42,7 +43,7 @@ export default function App  ()  {
       </main>
       
 
-      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      
     </div>
   );
 }
